@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.online.skystar.ui.theme.screens.dashboard.Dashboard_Screen
 import com.online.skystar.ui.theme.screens.home.Homescreen
 import com.online.skystar.ui.theme.screens.login.Loginscreen
 import com.online.skystar.ui.theme.screens.register.register_screen
@@ -32,6 +33,10 @@ fun AppNavHost(modifier: Modifier = Modifier,
         composable (route_splash){
             Splashscreen(navController)
         }
+        composable (route_dashboard){
+            Dashboard_Screen()
+        }
     }
 
 }
+

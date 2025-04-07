@@ -29,6 +29,7 @@ import com.online.skystar.R
 import com.online.skystar.navigation.route_login
 import com.online.skystar.navigation.route_register
 import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
+import java.nio.file.WatchEvent
 
 @Composable
 fun Homescreen(navController: NavHostController) {
@@ -71,6 +72,11 @@ fun Homescreen(navController: NavHostController) {
                 fontSize = 30.sp)
 
 
+        }
+        Button(onClick = {navController.navigate(route_register)},
+            modifier = Modifier.width(300.dp)) {
+            Text(text = "Dashboard",
+                fontSize = 30.sp)
         }
 
 
